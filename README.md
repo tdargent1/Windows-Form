@@ -16,6 +16,22 @@ Ainsi, afin de ne pas la laisser vide, nous avons fait le choix d'ajouter diffé
 ![Mere.png](http://image.noelshack.com/fichiers/2018/42/5/1539939751-mere.png)
 
 1. Bouton New: Instancie une nouvelle fenêtre et l'ajouter à la List Box.
+La mère ayant de nombreuses Filles, celles-ci seront stockées dans un objet de type ArrayList géré par la fenêtre mère:
+*public partial class FMere : Form
+{
+  List<FFille> lesFilles;
+  private int nombreFille; //Compteur permettant de numéroter les filles créées.
+  private string nomMere; //Permet de nommer les filles créées.
+  ..
+}
+private void btnNew_Click(object sender, EventArgs e)
+{
+nombreFille = nombreFille + 1;
+FFille nouvelleFenetre = new FFille(this, nombreFille);
+lesFilles.Add(nouvelleFenetre);
+lbLesFilles.Items.Add("Fille n°" + nombreFille);
+}*
+  
 2. Bouton Close: Ferme la fenêtre préalablement séléctionnée dans la List Box et l'efface de la List Box (Elle n'existe plus en mémoire).
 3. List Box: Liste les fenêtres Fille instanciées.
 4. Bouton Show: Ouvre, affiche la fenêtre Fille selectionnée dans la List Box.
