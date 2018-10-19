@@ -28,7 +28,7 @@ public partial class FMere : Form
   public FMere()
   {
     InitializeComponent();
-    btnNew.Click += new EventHandler(btnNew_Click);
+    btnNew.Click += new EventHandler(btnNew_Click); //Abbonnement de la fenêtre FMere à l'événement Click du bouton btnNew
   }
   
   private void btnNew_Click(object sender, EventArgs e)
