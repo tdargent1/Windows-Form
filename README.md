@@ -13,6 +13,8 @@ Dans un premier temps, il fut nécessaire de créer la fenêtre Mère.
 Celle-ci est entre autre la fenêtre par défaut générer par la solution Windows Form.
 Ainsi, afin de ne pas la laisser vide, nous avons fait le choix d'ajouter différentes fonctionnalités:
 
+![Mere.png](http://image.noelshack.com/fichiers/2018/42/5/1539939751-mere.png)
+
 1. Bouton New: Instancie une nouvelle fenêtre et l'ajouter à la List Box.
 2. Bouton Close: Ferme la fenêtre préalablement séléctionnée dans la List Box et l'efface de la List Box (Elle n'existe plus en mémoire).
 3. List Box: Liste les fenêtres Fille instanciées.
@@ -20,4 +22,6 @@ Ainsi, afin de ne pas la laisser vide, nous avons fait le choix d'ajouter diffé
 5. Bouton Hide: Cache la fenêtre fille selectionnées dans la List Box.
 6. Bouton Show Dialog: Ouvre une fenêtre fille selectionnée dans la List Box en tant que Show Dialog.
 
-![Mere.png](http://image.noelshack.com/fichiers/2018/42/5/1539939751-mere.png)
+![FilleNew.png](http://image.noelshack.com/fichiers/2018/42/5/1539939823-fillenew.png)
+
+![FilleMere.png](http://image.noelshack.com/fichiers/2018/42/5/1539939856-fillemere.png)
