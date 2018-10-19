@@ -19,3 +19,5 @@ Ainsi, afin de ne pas la laisser vide, nous avons fait le choix d'ajouter diffé
 4. Bouton Show: Ouvre, affiche la fenêtre Fille selectionnée dans la List Box.
 5. Bouton Hide: Cache la fenêtre fille selectionnées dans la List Box.
 6. Bouton Show Dialog: Ouvre une fenêtre fille selectionnée dans la List Box en tant que Show Dialog.
+
+![Mere.png](http://image.noelshack.com/fichiers/2018/42/5/1539939751-mere.png)
