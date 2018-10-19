@@ -24,13 +24,20 @@ public partial class FMere : Form
   private int nombreFille; //Compteur permettant de numéroter les filles créées.
   private string nomMere; //Permet de nommer les filles créées.
   ..
-}
-private void btnNew_Click(object sender, EventArgs e)
-{
-nombreFille = nombreFille + 1;
-FFille nouvelleFenetre = new FFille(this, nombreFille);
-lesFilles.Add(nouvelleFenetre);
-lbLesFilles.Items.Add("Fille n°" + nombreFille);
+  
+  public FMere()
+  {
+    InitializeComponent();
+    btnNew.Click += new EventHandler(btnNew_Click);
+  }
+  
+  private void btnNew_Click(object sender, EventArgs e)
+  {
+    nombreFille = nombreFille + 1;
+    FFille nouvelleFenetre = new FFille(this, nombreFille);
+    lesFilles.Add(nouvelleFenetre);
+    lbLesFilles.Items.Add("Fille n°" + nombreFille);
+  }
 }
 ```
   
